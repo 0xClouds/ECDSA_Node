@@ -1,7 +1,7 @@
 ## ECDSA Node
 
 I have done this problem in the past as a Mentor for Alchemy University about a year ago.
-Recently I've decided rereview this material to get a deeper understanding of foundational blockchain concepts and the EVM.
+Recently I've decided to rereview this material to get a deeper understanding of foundational blockchain concepts and the EVM.
 
 What makes this solution novel is that we are able to keep all private key interactions on the backend. The client is only ever aware of the public key/address and we send it via API to the backend and then find the appropraite accounts private key using the public key. We then have a user sign a tx, and then verify they've signed before executing the transfer. This is closer to what is truly happening with transfers on Ethereum and other EVM based chains.
 
