@@ -5,9 +5,9 @@ Recently I've decided to rereview this material to get a deeper understanding of
 
 What makes this solution novel is that we are able to keep all private key interactions on the backend. The client is only ever aware of the public key/address and we send it via API to the backend and then find the appropraite accounts private key using the public key. We then have a user sign a tx, and then verify they've signed before executing the transfer. This is closer to what is truly happening with transfers on Ethereum and other EVM based chains.
 
-You could extend this to be closer to a provider like MetaMask by storing the private keys in the browser and encrypting them with a password the user defines, and decrypting them once the password is entered, and signing with the keys from the browser.
+You could extend this to be closer to a provider like MetaMask by storing the private keys / seed phrase in the browser
 
-Here is a [stack exchange](https://ethereum.stackexchange.com/questions/159607/where-does-metamask-store-the-private-key-when-the-account-is-only-locked-with) on how
+Here is a [stack exchange](https://ethereum.stackexchange.com/questions/159607/where-does-metamask-store-the-private-key-when-the-account-is-only-locked-with) on how Metamask handles seedphrase generation and storing your private keys / seedphrase on your machine. 
 
 ---
 
